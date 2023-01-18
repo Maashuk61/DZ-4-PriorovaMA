@@ -26,5 +26,12 @@ int Exponentiate(int A, int B)
 
 int numberA = ReadNumberA("Введите число А: ");
 int numberB = ReadNumberB("Введите число В: ");
+if (numberB < 0)
+{
+    Console.WriteLine($"Число В должно быть положительное");
+}
+else
+{
 int res = Exponentiate(numberA, numberB);
 Console.WriteLine (res);
+}
